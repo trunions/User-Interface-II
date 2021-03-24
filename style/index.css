@@ -1,8 +1,29 @@
+/*fonts*/
+
+@font-face{
+    font-family:'Noto Serif';
+    src:url("../../../fonts/NotoSerif-Regular.ttf");
+}
+
+@font-face{
+    font-family:'Noto Bold';
+    src:url('../../../fonts/NotoSerif-Bold.ttf');
+}
+
+@font-face{
+    font-family:'Noto Italic';
+    src:url('../../../fonts/NotoSerif-Italic.ttf')
+}
+
+
+
 body{
     background-color:black;
     color:white;
+    font-family:'Noto Serif',sans-serif;
 }
 
+/*header*/
 
 header{
     display: flex;
@@ -13,24 +34,37 @@ header{
 h1{
     font-size: 60px;
     margin: 20px;
+    font-family:'Noto Bold', sans-serif;
 
 }
 
+/*navigation bar*/
+
 nav{
-    background-color: white;
-    padding: 10px;
-    margin: 20px;
     width: 30%;
-    font-size: 18px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 nav a{
+    background-color:white;
     color: black;
     text-decoration: none;
     margin:10px;
+    border:5px solid black;
+    padding:10px;
+    margin:25px;
+    border-radius:25px;
+    font-size:1.2em
 }
+
+nav a:hover{
+    background-color:lightgray;
+
+}
+
+/*about*/
 
 .about{
     display:flex;
@@ -54,6 +88,7 @@ nav a{
 .about div h2{
     font-size:40px;
     margin: 0 0 25px 0;
+    font-family:'Noto Bold', sans-serif;
 }
 
 .button{
@@ -64,11 +99,18 @@ nav a{
     padding: 5px;
     font-size: 18px;
     margin-bottom: 25px;
+    border-radius:25px;
+}
+
+.button:hover{
+    background-color:lightgray;
 }
 
 .about div p{
     font-size:20px;
 }
+
+/*project gallery*/
 
 .gallery{
     display: flex;
@@ -81,6 +123,17 @@ nav a{
     margin-right: 20px;
 }
 
+.gallery div img:hover{
+    opacity: 0.5;
+}
+
+.gallery div p{
+    font-family:'Noto Italic',sans-serif;
+}
+
+
+/*footer*/
+
 footer{
     background-color:gray;
     display:flex;
@@ -92,6 +145,8 @@ footer{
 footer h2{
     font-size: 40px;
     margin: 0 0 20px;
+    font-family:'Noto Bold',sans-serif;
+    color:black;
 }
 
 
