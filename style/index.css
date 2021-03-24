@@ -21,6 +21,8 @@ body{
     background-color:black;
     color:white;
     font-family:'Noto Serif',sans-serif;
+    max-width: 80rem;
+    margin: auto;
 }
 
 /*header*/
@@ -35,6 +37,7 @@ h1{
     font-size: 60px;
     margin: 20px;
     font-family:'Noto Bold', sans-serif;
+    margin: 20px 20px 20px 0;
 
 }
 
@@ -64,6 +67,10 @@ nav a:hover{
 
 }
 
+nav a:first-child{
+    margin-left:0;
+}
+
 /*about*/
 
 .about{
@@ -72,9 +79,9 @@ nav a:hover{
 }
 
 .about img{
-   width:46%;
-   height: 400px;
-   margin: 20px 75px 20px 20px;
+    width: 39em;
+    height: 23rem;
+    margin: 20px 75px 20px 0;
 }
 
 
@@ -115,7 +122,7 @@ nav a:hover{
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin-top: 30px;
 }
 
 .gallery div img{
