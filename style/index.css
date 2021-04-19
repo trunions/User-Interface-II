@@ -126,6 +126,12 @@ nav a:first-child{
     margin-top: 30px;
 }
 
+.gallery a{
+    text-decoration: none;
+    color: white;
+}
+
+
 .gallery div img{
     width: 18.75rem;
     
@@ -137,6 +143,7 @@ nav a:first-child{
 
 .gallery div p{
     font-family:'Noto Italic',sans-serif;
+    text-align: center;
 }
 
 
